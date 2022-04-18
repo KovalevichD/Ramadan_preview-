@@ -1,11 +1,28 @@
 <html>
 <head>
-	<title>UNICEF Design System</title>
+	<title>UNICEF / Water Ramadan</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body class="no-js">
 	<script>
 		window.addEventListener('load', () => {
+			const source = './_zips/all.zip';
+			
+			document.body.insertAdjacentHTML('afterbegin',
+				`<a download style="display: block;
+	                                    width: 120px;
+	                                    height: 30px;
+	                                    line-height: 30px;
+	                                    background-color: #5280F6;
+	                                    color: #fff;
+	                                    text-align: center;
+	                                    text-decoration: none;
+	                                    position: fixed;
+										top: 65px;
+										right: 20px;
+										z-index: 99;"
+				href="${source}">Download all</a>`
+			)
 			document.querySelectorAll('iframe')
 				.forEach(i => {
 					const zip = i.src.replace(/\/index\.html/, '.zip').replace(/(\/)banners(\/)/, '$1_zips$2')
@@ -18,8 +35,7 @@
 	                                    color: #fff;
 	                                    text-align: center;
 	                                    text-decoration: none;
-	                                    margin-top: 10px;
-					    margin-bottom: 10px;"
+	                                    margin-top: 10px;"
 						href="${zip}">Download</a>`
 					)
 				})
@@ -29,147 +45,138 @@
 	<div id="adblocker" class="adblocker">It looks like you're using an ad blocker, which <em>may</em> cause some banner previews to break or not show up properly.</div>
 	<div id="grid" class="grid">
 		<div class="col">
-			<div class="wrapper" style="width: 300px; height: 600px; background-color: #2d2926;"><h6 class="heading" style="width: 300px;">Language=ENG, Size=300x600, Text Layout=TextBottom, Subheadline=True</h6>
+			<div class="wrapper" style="width: 300px; height: 600px; background-color: #2d2926;"><h6 class="heading" style="width: 300px;">Ramadan_Water_Children_300x600</h6>
 				<iframe
-					title="300x600 Language=ENG, Size=300x600, Text Layout=TextBottom, Subheadline=True"
+					title="300x600 Ramadan_Water_Children_300x600"
 					width="300"
 					height="600"
-					src="banners/languageeng-size300x600-text-layouttextbottom-subheadlinetrue/index.html"
+					src="banners/ramadan-water-children-300x600/index.html"
 					frameBorder="0"></iframe></div>
 		</div>
 		<div class="col">
-			<div class="wrapper" style="width: 300px; height: 600px; background-color: #2d2926;"><h6 class="heading" style="width: 300px;">Language=ENG, Size=300x600, Text Layout=TextBottom, Subheadline=False</h6>
+			<div class="wrapper" style="width: 728px; height: 90px; background-color: #2d2926;"><h6 class="heading" style="width: 728px;">Ramadan_Water_Children_728x90</h6>
 				<iframe
-					title="300x600 Language=ENG, Size=300x600, Text Layout=TextBottom, Subheadline=False"
+					title="728x90 Ramadan_Water_Children_728x90"
+					width="728"
+					height="90"
+					src="banners/ramadan-water-children-728x90/index.html"
+					frameBorder="0"></iframe></div>
+		</div>
+		<div class="col">
+			<div class="wrapper" style="width: 970px; height: 250px; background-color: #2d2926;"><h6 class="heading" style="width: 970px;">Ramadan_Water_Children_970x250</h6>
+				<iframe
+					title="970x250 Ramadan_Water_Children_970x250"
+					width="970"
+					height="250"
+					src="banners/ramadan-water-children-970x250/index.html"
+					frameBorder="0"></iframe></div>
+		</div>
+		<div class="col">
+			<div class="wrapper" style="width: 300px; height: 600px; background-color: #2d2926;"><h6 class="heading" style="width: 300px;">Ramadan_Water_GirlsGreen_300x600</h6>
+				<iframe
+					title="300x600 Ramadan_Water_GirlsGreen_300x600"
 					width="300"
 					height="600"
-					src="banners/languageeng-size300x600-text-layouttextbottom-subheadlinefalse/index.html"
+					src="banners/ramadan-water-girlsgreen-300x600/index.html"
 					frameBorder="0"></iframe></div>
 		</div>
 		<div class="col">
-			<div class="wrapper" style="width: 300px; height: 600px; background-color: #2d2926;"><h6 class="heading" style="width: 300px;">Language=ENG, Size=300x600, Text Layout=TextTop, Subheadline=True</h6>
+			<div class="wrapper" style="width: 728px; height: 90px; background-color: #2d2926;"><h6 class="heading" style="width: 728px;">Ramadan_Water_GirlsGreen_728x90</h6>
 				<iframe
-					title="300x600 Language=ENG, Size=300x600, Text Layout=TextTop, Subheadline=True"
+					title="728x90 Ramadan_Water_GirlsGreen_728x90"
+					width="728"
+					height="90"
+					src="banners/ramadan-water-girlsgreen-728x90/index.html"
+					frameBorder="0"></iframe></div>
+		</div>
+		<div class="col">
+			<div class="wrapper" style="width: 970px; height: 250px; background-color: #2d2926;"><h6 class="heading" style="width: 970px;">Ramadan_Water_GirlsGreen_970x250</h6>
+				<iframe
+					title="970x250 Ramadan_Water_GirlsGreen_970x250"
+					width="970"
+					height="250"
+					src="banners/ramadan-water-girlsgreen-970x250/index.html"
+					frameBorder="0"></iframe></div>
+		</div>
+		<div class="col">
+			<div class="wrapper" style="width: 300px; height: 250px; background-color: #2d2926;"><h6 class="heading" style="width: 300px;">Ramadan_Water_GirlsGreen_300x250</h6>
+				<iframe
+					title="300x250 Ramadan_Water_GirlsGreen_300x250"
+					width="300"
+					height="250"
+					src="banners/ramadan-water-girlsgreen-300x250/index.html"
+					frameBorder="0"></iframe></div>
+		</div>
+		<div class="col">
+			<div class="wrapper" style="width: 300px; height: 600px; background-color: #2d2926;"><h6 class="heading" style="width: 300px;">Ramadan_Water_Smiling_300x600</h6>
+				<iframe
+					title="300x600 Ramadan_Water_Smiling_300x600"
 					width="300"
 					height="600"
-					src="banners/languageeng-size300x600-text-layouttexttop-subheadlinetrue/index.html"
+					src="banners/ramadan-water-smiling-300x600/index.html"
 					frameBorder="0"></iframe></div>
 		</div>
 		<div class="col">
-			<div class="wrapper" style="width: 300px; height: 600px; background-color: #2d2926;"><h6 class="heading" style="width: 300px;">Language=ENG, Size=300x600, Text Layout=TextTop, Subheadline=False</h6>
+			<div class="wrapper" style="width: 728px; height: 90px; background-color: #2d2926;"><h6 class="heading" style="width: 728px;">Ramadan_Water_Smiling_728x90</h6>
 				<iframe
-					title="300x600 Language=ENG, Size=300x600, Text Layout=TextTop, Subheadline=False"
+					title="728x90 Ramadan_Water_Smiling_728x90"
+					width="728"
+					height="90"
+					src="banners/ramadan-water-smiling-728x90/index.html"
+					frameBorder="0"></iframe></div>
+		</div>
+		<div class="col">
+			<div class="wrapper" style="width: 970px; height: 250px; background-color: #2d2926;"><h6 class="heading" style="width: 970px;">Ramadan_Water_Smiling_970x250</h6>
+				<iframe
+					title="970x250 Ramadan_Water_Smiling_970x250"
+					width="970"
+					height="250"
+					src="banners/ramadan-water-smiling-970x250/index.html"
+					frameBorder="0"></iframe></div>
+		</div>
+		<div class="col">
+			<div class="wrapper" style="width: 300px; height: 250px; background-color: #2d2926;"><h6 class="heading" style="width: 300px;">Ramadan_Water_Smiling_300x250</h6>
+				<iframe
+					title="300x250 Ramadan_Water_Smiling_300x250"
+					width="300"
+					height="250"
+					src="banners/ramadan-water-smiling-300x250/index.html"
+					frameBorder="0"></iframe></div>
+		</div>
+		<div class="col">
+			<div class="wrapper" style="width: 300px; height: 600px; background-color: #2d2926;"><h6 class="heading" style="width: 300px;">Ramadan_Water_Girls_300x600</h6>
+				<iframe
+					title="300x600 Ramadan_Water_Girls_300x600"
 					width="300"
 					height="600"
-					src="banners/languageeng-size300x600-text-layouttexttop-subheadlinefalse/index.html"
+					src="banners/ramadan-water-girls-300x600/index.html"
 					frameBorder="0"></iframe></div>
 		</div>
 		<div class="col">
-			<div class="wrapper" style="width: 728px; height: 90px; background-color: #2d2926;"><h6 class="heading" style="width: 728px;">Language=ENG, Size=728x90, Text Layout=TextLeft, Subheadline=True</h6>
+			<div class="wrapper" style="width: 300px; height: 250px; background-color: #2d2926;"><h6 class="heading" style="width: 300px;">Ramadan_Water_Girls_300x250</h6>
 				<iframe
-					title="728x90 Language=ENG, Size=728x90, Text Layout=TextLeft, Subheadline=True"
-					width="728"
-					height="90"
-					src="banners/languageeng-size728x90-text-layouttextleft-subheadlinetrue/index.html"
-					frameBorder="0"></iframe></div>
-		</div>
-		<div class="col">
-			<div class="wrapper" style="width: 728px; height: 90px; background-color: #2d2926;"><h6 class="heading" style="width: 728px;">Language=ENG, Size=728x90, Text Layout=TextLeft, Subheadline=False</h6>
-				<iframe
-					title="728x90 Language=ENG, Size=728x90, Text Layout=TextLeft, Subheadline=False"
-					width="728"
-					height="90"
-					src="banners/languageeng-size728x90-text-layouttextleft-subheadlinefalse/index.html"
-					frameBorder="0"></iframe></div>
-		</div>
-		<div class="col">
-			<div class="wrapper" style="width: 728px; height: 90px; background-color: #2d2926;"><h6 class="heading" style="width: 728px;">Language=ENG, Size=728x90, Text Layout=TextRight, Subheadline=True</h6>
-				<iframe
-					title="728x90 Language=ENG, Size=728x90, Text Layout=TextRight, Subheadline=True"
-					width="728"
-					height="90"
-					src="banners/languageeng-size728x90-text-layouttextright-subheadlinetrue/index.html"
-					frameBorder="0"></iframe></div>
-		</div>
-		<div class="col">
-			<div class="wrapper" style="width: 728px; height: 90px; background-color: #2d2926;"><h6 class="heading" style="width: 728px;">Language=ENG, Size=728x90, Text Layout=TextRight, Subheadline=False</h6>
-				<iframe
-					title="728x90 Language=ENG, Size=728x90, Text Layout=TextRight, Subheadline=False"
-					width="728"
-					height="90"
-					src="banners/languageeng-size728x90-text-layouttextright-subheadlinefalse/index.html"
-					frameBorder="0"></iframe></div>
-		</div>
-		<div class="col">
-			<div class="wrapper" style="width: 300px; height: 250px; background-color: #2d2926;"><h6 class="heading" style="width: 300px;">Language=ENG, Size=300x250, Text Layout=TextLeft, Subheadline=True</h6>
-				<iframe
-					title="300x250 Language=ENG, Size=300x250, Text Layout=TextLeft, Subheadline=True"
+					title="300x250 Ramadan_Water_Girls_300x250"
 					width="300"
 					height="250"
-					src="banners/languageeng-size300x250-text-layouttextleft-subheadlinetrue/index.html"
+					src="banners/ramadan-water-girls-300x250/index.html"
 					frameBorder="0"></iframe></div>
 		</div>
 		<div class="col">
-			<div class="wrapper" style="width: 300px; height: 250px; background-color: #2d2926;"><h6 class="heading" style="width: 300px;">Language=ENG, Size=300x250, Text Layout=TextLeft, Subheadline=False</h6>
+			<div class="wrapper" style="width: 970px; height: 250px; background-color: #2d2926;"><h6 class="heading" style="width: 970px;">Ramadan_Water_Girls_970x250</h6>
 				<iframe
-					title="300x250 Language=ENG, Size=300x250, Text Layout=TextLeft, Subheadline=False"
-					width="300"
-					height="250"
-					src="banners/languageeng-size300x250-text-layouttextleft-subheadlinefalse/index.html"
-					frameBorder="0"></iframe></div>
-		</div>
-		<div class="col">
-			<div class="wrapper" style="width: 300px; height: 250px; background-color: #2d2926;"><h6 class="heading" style="width: 300px;">Language=ENG, Size=300x250, Text Layout=TextRight, Subheadline=True</h6>
-				<iframe
-					title="300x250 Language=ENG, Size=300x250, Text Layout=TextRight, Subheadline=True"
-					width="300"
-					height="250"
-					src="banners/languageeng-size300x250-text-layouttextright-subheadlinetrue/index.html"
-					frameBorder="0"></iframe></div>
-		</div>
-		<div class="col">
-			<div class="wrapper" style="width: 300px; height: 250px; background-color: #2d2926;"><h6 class="heading" style="width: 300px;">Language=ENG, Size=300x250, Text Layout=TextRight, Subheadline=False</h6>
-				<iframe
-					title="300x250 Language=ENG, Size=300x250, Text Layout=TextRight, Subheadline=False"
-					width="300"
-					height="250"
-					src="banners/languageeng-size300x250-text-layouttextright-subheadlinefalse/index.html"
-					frameBorder="0"></iframe></div>
-		</div>
-		<div class="col">
-			<div class="wrapper" style="width: 970px; height: 250px; background-color: #2d2926;"><h6 class="heading" style="width: 970px;">Language=ENG, Size=970x250, Text Layout=TextLeft, Subheadline=True</h6>
-				<iframe
-					title="970x250 Language=ENG, Size=970x250, Text Layout=TextLeft, Subheadline=True"
+					title="970x250 Ramadan_Water_Girls_970x250"
 					width="970"
 					height="250"
-					src="banners/languageeng-size970x250-text-layouttextleft-subheadlinetrue/index.html"
+					src="banners/ramadan-water-girls-970x250/index.html"
 					frameBorder="0"></iframe></div>
 		</div>
 		<div class="col">
-			<div class="wrapper" style="width: 970px; height: 250px; background-color: #2d2926;"><h6 class="heading" style="width: 970px;">Language=ENG, Size=970x250, Text Layout=TextLeft, Subheadline=False</h6>
+			<div class="wrapper" style="width: 728px; height: 90px; background-color: #2d2926;"><h6 class="heading" style="width: 728px;">Ramadan_Water_Girls_728x90</h6>
 				<iframe
-					title="970x250 Language=ENG, Size=970x250, Text Layout=TextLeft, Subheadline=False"
-					width="970"
-					height="250"
-					src="banners/languageeng-size970x250-text-layouttextleft-subheadlinefalse/index.html"
-					frameBorder="0"></iframe></div>
-		</div>
-		<div class="col">
-			<div class="wrapper" style="width: 970px; height: 250px; background-color: #2d2926;"><h6 class="heading" style="width: 970px;">Language=ENG, Size=970x250, Text Layout=TextRight, Subheadline=True</h6>
-				<iframe
-					title="970x250 Language=ENG, Size=970x250, Text Layout=TextRight, Subheadline=True"
-					width="970"
-					height="250"
-					src="banners/languageeng-size970x250-text-layouttextright-subheadlinetrue/index.html"
-					frameBorder="0"></iframe></div>
-		</div>
-		<div class="col">
-			<div class="wrapper" style="width: 970px; height: 250px; background-color: #2d2926;"><h6 class="heading" style="width: 970px;">Language=ENG, Size=970x250, Text Layout=TextRight, Subheadline=False</h6>
-				<iframe
-					title="970x250 Language=ENG, Size=970x250, Text Layout=TextRight, Subheadline=False"
-					width="970"
-					height="250"
-					src="banners/languageeng-size970x250-text-layouttextright-subheadlinefalse/index.html"
+					title="728x90 Ramadan_Water_Girls_728x90"
+					width="728"
+					height="90"
+					src="banners/ramadan-water-girls-728x90/index.html"
 					frameBorder="0"></iframe></div>
 		</div>
 	</div>
@@ -267,7 +274,7 @@
 			vertical-align: top;
 			margin: 20px;
 			margin-bottom: 50px;
-		}		.col {
+		}.col {
 			display: block;
 			margin-bottom: 80px;
 		}
