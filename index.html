@@ -5,9 +5,12 @@
 </head>
 <body class="no-js">
 	<script>
+		// https://kovalevichd.github.io
+		const origin = 'https://github.com/' + window.location.origin.replace(/^(https\:\/\/)(\S).*$/, '$2') + window.location.pathname.replace(/index\.html.*$/, '') + 'raw/master/'
+
 		window.addEventListener('load', () => {
 			// const source = './_zips/all.zip';
-			const source = 'https://github.com/kovalevichd/Ramadan_preview-/raw/master/_zips/all.zip';
+			const source = origin + '_zips/all.zip';
 
 			document.body.insertAdjacentHTML('afterbegin',
 				`<a download style="display: block;
@@ -26,7 +29,9 @@
 			)
 			document.querySelectorAll('iframe')
 				.forEach(i => {
-					const zip = i.src.replace(/\/index\.html/, '.zip').replace(/(\/)banners(\/)/, '$1_zips$2')
+					const zip = origin + '_zips/' + i.src.replace(/(^.*\/banners\/(.*)\/.*$)/, '$2') + '.zip'
+					// const zip = i.src.replace(/\/index\.html/, '.zip').replace(/(\/)banners(\/)/, '$1_zips$2')
+					console.log(zip)
 					i.parentElement.insertAdjacentHTML('beforeend',
 						`<a download target="_blank" style="display: block;
 										font-size: 13px;
