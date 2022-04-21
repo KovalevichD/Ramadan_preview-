@@ -27,12 +27,13 @@
 				.forEach(i => {
 					const zip = i.src.replace(/\/index\.html/, '.zip').replace(/(\/)banners(\/)/, '$1_zips$2')
 					i.parentElement.insertAdjacentHTML('beforeend',
-						`<a download style="display: block;
-	                                    width: 100px;
-	                                    height: 30px;
-	                                    line-height: 30px;
-	                                    background-color: #5280F6;
-	                                    color: #fff;
+						`<a download target="_blank" style="display: block;
+										font-size: 13px;
+	                                    width: 80px;
+	                                    height: 20px;
+	                                    line-height: 20px;
+	                                    color: #5280F6;
+	                                    border: 1px solid #5280F6;
 	                                    text-align: center;
 	                                    text-decoration: none;
 	                                    margin-top: 10px;"
@@ -276,7 +277,7 @@
 			margin-bottom: 50px;
 		}.col {
 			display: block;
-			margin-bottom: 80px;
+			margin-bottom: 55px;
 		}
 	</style>
 	
